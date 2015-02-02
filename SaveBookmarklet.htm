@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>Maximize Yammer bookmarklet</title>
+</head>
+<body>
+
+<p>Yammer content is constrained to 500px. This bookmarklet maximizes the content.</p>
+<p>To use the bookmarklet, right click it and save it to your favorites/bookmarks.</p>
+<p><a href="javascript:(function(){var e=$('#column-one'),t=$('#column-two'),n=t.find('.page-header-container'),r=n.find('.page-header'),i=n.find('.filecollab-group-header-basics'),s=$('#main-column'),o=$('#column-two .yj-selector-right-sidebar'),u=e.add(i).add(o),a=$('#column-two .filecollab-action-bar-with-tabs'),f=$('#column-two a.avatar');if(!e.is(':visible')){i.find('.thumbnail').prepend(f);f.css({'float':'',marginLeft:'',padding:''});f.add(f.children('img')).css({height:'',width:''});t.add(n).add(r).add(s).css({'float':'',padding:'',width:''});u.show();return}u.hide();a.prepend(f.css({'float':'left',marginLeft:'-10px',padding:'4px'}));f.add(f.children('img')).css({height:'32px',width:'32px'});t.add(n).add(r).add(s).css({'float':'none',padding:0,width:'100%'})})()">Maximize Yammer</a></p>
+<p><small>Should work in all browsers, but it's only been tested in IE11 and Chrome40</small></p>
+
+</body>
+</html>
